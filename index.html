@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Persianas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="/img/logo/logo.png" alt="Logo do Site" class="logo">
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <nav>
+            <ul>
+                <li><a href="#inicio">HOME</a></li>
+                <li><a href="#MEUS SERVIÇOS">MEUS SERVIÇOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="inicio">HOME</h1>
+        <div class="container">
+            <div class="text-container">
+                <h2>Lucas Gomes</h2>
+                <h4>DESENVOLVEDOR WEB</h4>
+                <p>Criando soluções digitais de sucesso para ajudá-lo a atingir seus objetivos de negócios de forma estratégica.</p>
+                <button id="orcamento-btn">Orçamento</button>
+            </div>
+            <div class="image-container">
+                <img src="/img/lucas/eu.jpeg" alt="Descrição da imagem">
+            </div>
+        </div>
+        <H1 id="MEUS SERVIÇOS">MEUS SERVIÇOS</H1>
+        <div class="sub-container">
+            <div class="textbox1">
+                <h3>DESENVOLVIMENTO WEB</h3>
+                <p>Sites com arquitetura em HTML, padrão WCAG e melhor otimização de SEO para buscadores do Google.</p>
+
+            </div>
+            <div class="textbox2">
+                <h3>UI UX DESIGN</h3>
+                <p>Interfaces criadas com base em pesquisas de usabilidade, jornada do usuário, personas, wireframes e testes</p>
+            </div>
+            <div class="textbox3">
+                <h3>BRAND DESIGN</h3>
+                <p>Logotipos com design impactantes e com a identidade de cada marca, arquitetura ante falhas e plágio</p>
+            </div>
+        </div>
+        <h1 id="contato">ENTRE EM CONTATO</h1>
+        <div class="contact-container">
+            <a href="tel:seu-numero-de-telefone">
+                <img src="/img/icon/telefone-icon.png" alt="Telefone" style="max-width: 40px; margin-right: 20px;">
+                <p>Telefone</p>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=seu-numero-de-telefone&text=Olá%2C%20gostaria%20de%20saber%20mais%20informações.">
+                <img src="/img/icon/whatsapp-icon.png" alt="WhatsApp" style="max-width: 40px; margin-right: 20px;">
+                <p>WhatsApp</p>
+            </a>
+            <a href="mailto:seu-email">
+                <img src="/img/icon/email-icon.png" alt="Email" style="max-width: 40px;">
+                <p>E-mail</p>
+            </a>
+        </div>        
+    </div>
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados. Por Lucas Gomes.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

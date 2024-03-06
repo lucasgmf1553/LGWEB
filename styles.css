@@ -1,0 +1,236 @@
+body {
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #04BFAD;
+}
+h1 {
+    color: #172026;
+}
+
+header {
+    background-color: #172026;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #5FCDD9;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.logo {
+    width: 60px; /* Defina a largura da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+main {
+    padding: 20px;
+    text-align: center; /* Centralizar texto dentro do main */
+    margin-top: 100px; /* Espaçamento para evitar que o conteúdo seja sobreposto pelo cabeçalho */
+    
+}
+
+footer {
+    background-color: #172026;
+    color: #5FCDD9;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: block;
+    margin-top: 100px;
+}
+
+.menu-toggle {
+    background-color: #027373;
+    color: #5FCDD9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+.text-container {
+    flex: 1;
+    text-align: left; /* Garante que o texto comece do lado esquerdo */
+    margin-right: 20px;
+    font-size: 20px;
+    color: #172026
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 300px; /* Define o tamanho mínimo da imagem como 300px */
+}
+
+.image-container img {
+    max-width: 400px; /* Define o tamanho máximo da imagem como 400px */
+    width: 100%; /* Para garantir que a imagem ocupe todo o espaço disponível */
+}
+
+#orcamento-btn {
+    background-color: #027373; /* Define a cor de fundo do botão */
+    color: #5FCDD9; /* Define a cor do texto como branco */
+    padding: 10px 20px; /* Adiciona preenchimento ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona cantos arredondados ao botão */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+}
+
+#orcamento-btn:hover {
+    background-color: #025757; /* Altera a cor de fundo quando o botão é hover */
+}
+
+.sub-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.textbox1,
+.textbox2,
+.textbox3 {
+    flex: 1; /* Distribui o espaço igualmente entre as caixas de texto */
+    background-color: #027373;
+    color: #5FCDD9;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.contact-container {
+    display: flex; /* Usar flexbox para alinhar os itens horizontalmente */
+    justify-content: center; /* Centralizar os itens horizontalmente */
+    flex-wrap: wrap; /* Permitir que os itens quebrem para a próxima linha se necessário */
+    margin: 10px auto 50px; /* Adicionar margem superior e inferior e centralizar horizontalmente */
+}
+
+.contact-container a {
+    display: flex; /* Usar flexbox para alinhar a imagem e o texto horizontalmente */
+    align-items: center; /* Alinhar os itens verticalmente ao centro */
+    text-align: center; /* Centralizar o texto */
+    margin: 0 10px 30px; /* Adicionar margem entre os itens e abaixo deles */
+    text-decoration: none;
+    color: #172026;
+}
+
+
+.contact-container img {
+    max-width: 40px; /* Definir o tamanho máximo da imagem */
+    margin-right: 10px; /* Adicionar margem entre a imagem e o texto */
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: row; /* Altera a direção do flexbox para linha */
+        justify-content: flex-start; /* Alinha os itens à esquerda */
+    }
+    
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #172026;
+        padding-top: 20px;
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center; /* Centraliza os itens da lista horizontalmente */
+        align-items: center; /* Alinha os itens da lista verticalmente */
+        flex-direction: column; /* Alinha os itens da lista verticalmente */
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    nav ul li a {
+        color: #5FCDD9;
+        text-decoration: none;
+    }
+    
+    .logo {
+        width: 95px; /* Define a largura do logo */
+        height: 95px; /* Define a altura do logo */
+        margin-right: 10px; /* Adiciona uma margem à direita para separar o logo do botão */
+    }
+    .menu-toggle {
+        order: 2; /* Define a ordem do botão do menu */
+        margin-top: 20px;
+    }
+
+    .menu-toggle, .logo {
+        display: inline-block; /* Permite que os elementos fiquem na mesma linha */
+        vertical-align: middle; /* Alinha os elementos verticalmente */
+    }
+
+    main {
+        margin-top: 100px; /* Ajuste o margin-top para remover a linha branca */
+    }
+    .container {
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .image-container {
+        order: -1; /* Move a imagem para cima */
+        margin-bottom: 20px; /* Adiciona margem entre a imagem e o texto */
+        
+    }
+    .text-container{
+        text-align:center;
+    }
+}
