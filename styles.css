@@ -1,11 +1,15 @@
 body {
 
-  font-family: "Open Sans", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-optical-sizing: auto;
   background-color: #04BFAD;
 }
 h1 {
     color: #172026;
+    margin-top: 100px;
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -87,8 +91,6 @@ footer {
     margin-right: 100px;
 }
 
-
-
 .text-container {
     flex: 1;
     text-align: left; /* Garante que o texto comece do lado esquerdo */
@@ -108,6 +110,7 @@ footer {
 .image-container img {
     max-width: 400px; /* Define o tamanho máximo da imagem como 400px */
     width: 100%; /* Para garantir que a imagem ocupe todo o espaço disponível */
+    border-radius: 5px;
 }
 
 #orcamento-btn {
@@ -264,5 +267,6 @@ footer {
       .textbox3 {
         width: 100%;
         margin-bottom: 20px;
+        align-items: center;
       }
 }
