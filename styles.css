@@ -173,7 +173,7 @@ footer {
     nav {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 130px;
         left: 0;
         width: 100%;
         background-color: #172026;
@@ -186,7 +186,7 @@ footer {
     
     nav ul {
         display: flex;
-        justify-content: center; /* Centraliza os itens da lista horizontalmente */
+        justify-content: right; /* Centraliza os itens da lista horizontalmente */
         align-items: center; /* Alinha os itens da lista verticalmente */
         flex-direction: column; /* Alinha os itens da lista verticalmente */
     }
@@ -233,4 +233,16 @@ footer {
     .text-container{
         text-align:center;
     }
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .textbox1,
+      .textbox2,
+      .textbox3 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
 }
